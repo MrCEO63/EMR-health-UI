@@ -1,0 +1,21 @@
+{
+  "name": "emr-health-ui",
+  "version": "1.0.0",
+  "description": "EMR HEALTH UI DESIGN",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u0016https://github.com/MrCEO63/EMR-health-UI.git"
+  },
+  "keywords": [
+    "health",
+    "EMR",
+    "Doctor",
+    "Patient"
+  ],
+  "author": "Chinedu Ekene Okpala",
+  "license": "MIT"
+}
