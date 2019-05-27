@@ -75,6 +75,10 @@
     li {
       > a {
         font-size: 1em;
+        background: unset;
+        p {
+          text-align: left;
+        }
       }
     }
   }
