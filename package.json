@@ -6,7 +6,7 @@
   "scripts": {
     "test": "test",
     "start": "webpack-dev-server --mode development --hot --progress --open",
-    "build": "webpack --mode production"
+    "build": "node script/generateEnv webpack --mode production"
   },
   "repository": {
     "type": "git",
