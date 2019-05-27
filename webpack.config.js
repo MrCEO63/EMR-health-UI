@@ -74,7 +74,7 @@ module.exports = {
   devServer: {
     contentBase: './src/index.js',
     compress: true,
-    port: 3005, // port number
+    port: 3000,
     historyApiFallback: true,
     quiet: true
     // disableHostCheck: true //unsafe for production. Change it later.
@@ -85,11 +85,10 @@ module.exports = {
       Components: path.resolve(__dirname, 'src/components/'),
       Containers: path.resolve(__dirname, 'src/containers/'),
       Assets: path.resolve(__dirname, 'src/assets/'),
-      // Util: path.resolve(__dirname, 'src/util/'),
       Routes: path.resolve(__dirname, 'src/routes/'),
       Constants: path.resolve(__dirname, 'src/constants/'),
-      Redux: path.resolve(__dirname, 'src/redux/')
-      // Data: path.resolve(__dirname, 'src/data/')
+      Redux: path.resolve(__dirname, 'src/redux/'),
+      Data: path.resolve(__dirname, 'src/data/')
     }
   },
   module: {
@@ -100,7 +99,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           query: {
-            presets: ['es2015', 'react', 'stage-2']
+            presets: ['@babel/preset-env', '@babel/preset-react']
           }
         }
       },
@@ -162,7 +161,7 @@ module.exports = {
       { from: 'src/assets/css', to: 'assets/css' }
     ]),
     new FriendlyErrorsWebpackPlugin(),
-    new CleanWebpackPlugin(pathsToClean, cleanOptions),
+    new CleanWebpackPlugin(),
     new HtmlWebPackPlugin({
       template: './public/index.html',
       filename: './index.html',

@@ -1,0 +1,164 @@
+.login-layout {
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  .login-container {
+    margin: 100px auto;
+
+    .card {
+      background: #ffffff;
+      text-align: center;
+      padding: 50px;
+      width: 600px;
+
+      .card-title {
+        color: #2980b9;
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: 10px 0;
+      }
+
+      .card-text {
+        color: #2980b9;
+        font-size: 12px;
+        padding: 10px 0 20px;
+      }
+    }
+  }
+}
+
+.navbar-fixed-top {
+  position: fixed;
+}
+
+.navbar {
+  .navbar-wrapper {
+    flex-grow: 2;
+  }
+
+  .brand-name {
+    font-weight: 600;
+    font-size: 35px;
+    color: #f5f6fa;
+  }
+
+  .dropdown-menu {
+    padding: 10px;
+    button {
+      .nav-item {
+        color: #1b75b5;
+      }
+    }
+  }
+}
+
+.sidebar {
+  .logo {
+    padding: 1rem 3rem !important;
+    h4 {
+      text-align: center;
+      padding-top: 15px;
+      span {
+        color: #ffee07;
+        font-size: 20px;
+      }
+    }
+    img {
+      border-radius: 50%;
+      height: 140px;
+    }
+  }
+  .nav {
+    li {
+      > a {
+        font-size: 1em;
+      }
+    }
+  }
+}
+
+.dashboard-layout {
+  margin-top: 30px;
+
+  .card-header {
+    .card-title {
+      font-weight: 600;
+      .badge {
+        font-weight: 400;
+        font-size: 15px;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .remove-strip {
+    td {
+      border-top: none;
+    }
+  }
+}
+
+.my-patients-layout {
+  .navbar {
+    background-color: #f5f6fa;
+    border-bottom: none;
+    position: fixed;
+    z-index: 100;
+    width: 80%;
+    margin-top: -7px;
+    .navbar-brand {
+      margin-top: 0px;
+      font-size: 1.5rem;
+      padding-top: 10px;
+      color: #0f93f1;
+    }
+    .nav-item {
+      .search-bar {
+        border-left: 1px solid #c2c4ca;
+        button {
+          i {
+            color: #382d2d;
+          }
+        }
+      }
+    }
+    .select-link {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 330px;
+      label {
+        padding-top: 8px;
+      }
+      .select-dropdown {
+        width: 250px;
+      }
+    }
+  }
+  .patients-list {
+    padding-top: 90px;
+    .card {
+      cursor: pointer;
+      img {
+        border-radius: 50%;
+        height: 170px;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+.error-layout {
+  .card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 200px 0;
+    .card-title {
+      font-size: 30px;
+      font-weight: 600;
+    }
+  }
+}
