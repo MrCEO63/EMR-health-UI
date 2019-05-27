@@ -119,22 +119,9 @@ module.exports = {
         cache: true,
         parallel: true,
         uglifyOptions: {
-          parse: {
-            ecma: 8
-          },
-          compress: {
-            ecma: 5,
-            warnings: false,
-            comparisons: false
-          },
-          mangle: {
-            safari10: true
-          },
-          output: {
-            ecma: 5,
-            comments: false,
-            ascii_only: true
-          }
+          compress: false,
+          ecma: 6,
+          mangle: true
         },
         sourceMap: true
       }),
