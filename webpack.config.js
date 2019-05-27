@@ -25,16 +25,6 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-// the path(s) that should be cleaned
-const pathsToClean = ['dist', 'build'];
-
-// the clean options to use
-const cleanOptions = {
-  root: __dirname,
-  verbose: false, // Write logs to console.
-  dry: false
-};
-
 // Get the root path (assuming your webpack config is in the root of your project!)
 const currentPath = path.join(__dirname);
 
