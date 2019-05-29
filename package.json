@@ -21,9 +21,13 @@
   "author": "Chinedu Ekene Okpala",
   "license": "MIT",
   "dependencies": {
+    "d3-ease": "^1.0.5",
     "dotenv": "^8.0.0",
+    "progress-tracker": "^1.4.0",
     "react": "^16.8.6",
+    "react-circular-progressbar": "^2.0.0",
     "react-dom": "^16.8.6",
+    "react-move": "^5.2.1",
     "react-perfect-scrollbar": "^1.5.2",
     "react-redux": "^7.0.3",
     "react-router-dom": "^5.0.0",

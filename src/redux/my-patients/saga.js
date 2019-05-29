@@ -6,7 +6,6 @@ import { getAllMyPatientSuccess, getAllMyPatientFailed } from './actions';
 import patients from 'Data/patientList.json';
 
 function* getAllMyPatient() {
-  console.log(patients);
   if (patients) {
     yield put(getAllMyPatientSuccess(patients));
   } else {
@@ -14,10 +13,10 @@ function* getAllMyPatient() {
   }
 }
 
-export function* watchgetAllMyPatient() {
+export function* watchGetAllMyPatient() {
   yield takeEvery(GET_ALL_MY_PATIENT, getAllMyPatient);
 }
 
 export default function* rootSaga() {
-  yield all([fork(watchgetAllMyPatient)]);
+  yield all([fork(watchGetAllMyPatient)]);
 }

@@ -2,7 +2,8 @@
   {
     "date": "April 28th",
     "elapsTime": "2 days ago",
-    "patientName": "Sarah Williams",
+    "patientId": 1,
+    "patientName": "James Clerk",
     "refferal": "Dr Alex Ramos",
     "situation": "MINIMAL",
     "color": "secondary",
@@ -11,7 +12,8 @@
   {
     "date": "April 21st",
     "elapsTime": "5 days ago",
-    "patientName": "Sarah Williams",
+    "patientId": 2,
+    "patientName": "Emilys Steve",
     "refferal": "Dr Alison Francis",
     "situation": "CRITICAL",
     "color": "danger",
@@ -20,7 +22,8 @@
   {
     "date": "April 28th",
     "elapsTime": "5 days ago",
-    "patientName": "Jay Handson",
+    "patientId": 3,
+    "patientName": "Mike Johnes",
     "refferal": "Dr Ben Lockward",
     "situation": "NORMAL",
     "color": "success",

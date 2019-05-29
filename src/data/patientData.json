@@ -1,0 +1,12 @@
+[
+  {
+    "date": "April 28th",
+    "elapsTime": "2 days ago",
+    "patientId": 1,
+    "patientName": "James Clerk",
+    "refferal": "Dr Alex Ramos",
+    "situation": "MINIMAL",
+    "color": "secondary",
+    "completed": false
+  }
+]

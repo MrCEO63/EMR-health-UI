@@ -155,6 +155,83 @@
   }
 }
 
+.patient-info-layout {
+  margin-top: 25px;
+  .card-body.patient-details {
+    display: flex;
+    justify-content: space-between;
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin: 30px 0px 30px 50px;
+    }
+    #patient-info {
+      > label {
+        font-size: 20px;
+        font-weight: 600;
+      }
+      .badge {
+        position: absolute;
+        right: 300px;
+        font-size: 15px;
+        padding: 5px;
+      }
+      .pid {
+        display: flex;
+        padding: 10px;
+        justify-content: space-between;
+        p {
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+  // Patient Progress
+  // Significant Events
+  .vitals {
+    .section-header {
+      h3 {
+        color: #0491e3;
+      }
+    }
+    .cards {
+      .card-title {
+        color: #0491e3 !important;
+      }
+      .badge {
+        font-weight: 600;
+        float: right;
+        padding: 5px;
+        font-size: 14px;
+        margin-top: 5px;
+      }
+    }
+  }
+  .medication-progress {
+    .card-title {
+      color: #0491e3 !important;
+    }
+    .progress-tracker {
+      margin: 0 auto 100px;
+      padding: 0;
+      list-style: none;
+      height: 65px;
+      .progress-step {
+        &:not(:last-child)::after {
+          z-index: 0;
+        }
+        .badge {
+          width: 60%;
+          font-size: 15px;
+          position: absolute;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
+
 .error-layout {
   .card {
     background-color: #fff;

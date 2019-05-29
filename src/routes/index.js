@@ -7,11 +7,12 @@ import PerfectScrollbar from 'react-perfect-scrollbar';
 import TopNav from 'Containers/TopNav';
 import Sidebar from 'Containers/Sidebar';
 
-import Dashboard from './dashboard';
-import Appointments from './appointments';
-import Orders from './orders';
-import MyPatients from './my-patients';
-import Messages from './messages';
+import dashboard from './dashboard';
+import appointments from './appointments';
+import orders from './orders';
+import mypatients from './my-patients';
+import messages from './messages';
+import patientinfo from './patient-info';
 
 const Dashboards = ({ match }) => (
   <div className="wrapper" style={{ position: 'relative' }}>
@@ -24,11 +25,12 @@ const Dashboards = ({ match }) => (
       <div className="content">
         <Switch>
           <Redirect exact from={`${match.url}`} to={`${match.url}/dashboard`} />
-          <Route path={`${match.url}/dashboard`} component={Dashboard} />
-          <Route path={`${match.url}/appointments`} component={Appointments} />
-          <Route path={`${match.url}/orders`} component={Orders} />
-          <Route path={`${match.url}/my-patients`} component={MyPatients} />
-          <Route path={`${match.url}/messages`} component={Messages} />
+          <Route path={`${match.url}/dashboard`} component={dashboard} />
+          <Route path={`${match.url}/appointments`} component={appointments} />
+          <Route path={`${match.url}/orders`} component={orders} />
+          <Route path={`${match.url}/my-patients`} component={mypatients} />
+          <Route path={`${match.url}/messages`} component={messages} />
+          <Route path={`${match.url}/patient-info`} component={patientinfo} />
           <Redirect to="/error" />
         </Switch>
       </div>

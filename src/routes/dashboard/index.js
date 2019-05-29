@@ -13,10 +13,18 @@ class Dashboard extends Component {
   }
 
   componentDidMount() {
-    document.title = 'EMR HEALTH | MY PATIENTS';
+    document.title = 'EMR HEALTH | DASHBOARD';
     this.props.getAllAppiontment();
     this.props.getAllNotification();
   }
+
+  gotoVitals = index => {
+    const state = this.props.appointments[index];
+    this.props.history.push({
+      pathname: 'patient-info',
+      state
+    });
+  };
 
   render() {
     return this.props.loading ? (
@@ -27,7 +35,59 @@ class Dashboard extends Component {
           <Card className="card-tasks">
             <CardHeader>
               <CardTitle className="d-inline">
-                <Badge color="danger">2</Badge> Upcoming Appointment
+                <Badge color="danger">{this.props.appointments.length}</Badge> In Patient Visit
+              </CardTitle>
+            </CardHeader>
+            <CardBody>
+              <PerfectScrollbar
+                className="table-full-width table-responsive"
+                options={{ suppressScrollX: true, wheelPropagation: false }}
+              >
+                <Table>
+                  <tbody>
+                    {this.props.appointments.map((item, index) => (
+                      <tr
+                        key={index}
+                        onClick={() => this.gotoVitals(index)}
+                        style={{ cursor: 'pointer' }}
+                        title={item.patientName}
+                      >
+                        <td>
+                          <p className="title">{item.date}</p>
+                          <p className="text-muted">{item.elapsTime}</p>
+                        </td>
+                        <td>
+                          <p className="title">New Patient - {item.patientName}</p>
+                          <p className="text-muted">Refferal: {item.refferal}</p>
+                        </td>
+                        <td>
+                          <h4>
+                            <Badge color={item.color}>{item.situation}</Badge>
+                          </h4>
+                        </td>
+                        <td className="td-actions text-right">
+                          <div className="form-check">
+                            <label className="form-check-label">
+                              <input className="form-check-input" type="checkbox" value="" />
+                              <span className="form-check-sign">
+                                <span className="check" />
+                              </span>
+                            </label>
+                          </div>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </Table>
+              </PerfectScrollbar>
+            </CardBody>
+          </Card>
+        </Colxx>
+        <Colxx xxs={10} className="m-auto">
+          <Card className="card-tasks">
+            <CardHeader>
+              <CardTitle className="d-inline">
+                <Badge color="danger">{this.props.appointments.length}</Badge> Out Patient Visit
               </CardTitle>
             </CardHeader>
             <CardBody>
@@ -74,7 +134,7 @@ class Dashboard extends Component {
           <Card className="card-tasks">
             <CardHeader>
               <CardTitle className="d-inline">
-                <Badge color="danger">3</Badge> Notifications
+                <Badge color="danger">{this.props.notifications.length}</Badge> Notifications
               </CardTitle>
             </CardHeader>
             <CardBody>

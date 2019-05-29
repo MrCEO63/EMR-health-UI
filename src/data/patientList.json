@@ -1,82 +1,98 @@
 [
   {
     "image": "/assets/img/james.jpg",
+    "patientId": 1,
     "patientName": "James Clerk",
     "sicknessName": "Ulcerative Colities"
   },
   {
     "image": "/assets/img/emilyz.jpg",
+    "patientId": 2,
     "patientName": "Emilys Steve",
     "sicknessName": "Ulcerative Colities"
   },
   {
     "image": "/assets/img/anime6.png",
+    "patientId": 3,
     "patientName": "Ang Lucy",
     "sicknessName": "Ulcerative Colities"
   },
   {
     "image": "/assets/img/mike.jpg",
+    "patientId": 4,
     "patientName": "Mike Johnes",
     "sicknessName": "Ulcerative Colities"
   },
   {
     "image": "/assets/img/james.jpg",
+    "patientId": 1,
     "patientName": "James Clerk",
     "sicknessName": "Ulcerative Colities"
   },
   {
     "image": "/assets/img/emilyz.jpg",
-    "patientName": "Emilys Steve",
-    "sicknessName": "Ulcerative Colities"
-  },
-  {
-    "image": "/assets/img/mike.jpg",
-    "patientName": "Mike Johnes",
-    "sicknessName": "Ulcerative Colities"
-  },
-  {
-    "image": "/assets/img/anime6.png",
-    "patientName": "Ang Lucy",
-    "sicknessName": "Ulcerative Colities"
-  },
-  {
-    "image": "/assets/img/james.jpg",
-    "patientName": "James Clerk",
-    "sicknessName": "Ulcerative Colities"
-  },
-  {
-    "image": "/assets/img/emilyz.jpg",
+    "patientId": 2,
     "patientName": "Emilys Steve",
     "sicknessName": "Ulcerative Colities"
   },
   {
     "image": "/assets/img/anime6.png",
+    "patientId": 3,
     "patientName": "Ang Lucy",
     "sicknessName": "Ulcerative Colities"
   },
   {
     "image": "/assets/img/mike.jpg",
+    "patientId": 4,
     "patientName": "Mike Johnes",
     "sicknessName": "Ulcerative Colities"
   },
   {
     "image": "/assets/img/james.jpg",
+    "patientId": 1,
     "patientName": "James Clerk",
     "sicknessName": "Ulcerative Colities"
   },
   {
     "image": "/assets/img/emilyz.jpg",
+    "patientId": 2,
     "patientName": "Emilys Steve",
     "sicknessName": "Ulcerative Colities"
   },
   {
+    "image": "/assets/img/anime6.png",
+    "patientId": 3,
+    "patientName": "Ang Lucy",
+    "sicknessName": "Ulcerative Colities"
+  },
+  {
     "image": "/assets/img/mike.jpg",
+    "patientId": 4,
     "patientName": "Mike Johnes",
     "sicknessName": "Ulcerative Colities"
   },
   {
+    "image": "/assets/img/james.jpg",
+    "patientId": 1,
+    "patientName": "James Clerk",
+    "sicknessName": "Ulcerative Colities"
+  },
+  {
+    "image": "/assets/img/emilyz.jpg",
+    "patientId": 1,
+    "patientName": "Emilys Steve",
+    "sicknessName": "Ulcerative Colities"
+  },
+  {
     "image": "/assets/img/anime6.png",
+    "patientId": 3,
     "patientName": "Ang Lucy",
+    "sicknessName": "Ulcerative Colities"
+  },
+  {
+    "image": "/assets/img/mike.jpg",
+    "patientId": 4,
+    "patientName": "Mike Johnes",
     "sicknessName": "Ulcerative Colities"
   }
 ]

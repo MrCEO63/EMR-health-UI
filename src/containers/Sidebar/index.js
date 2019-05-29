@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Nav, NavItem } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
-// import PerfectScrollbar from 'react-perfect-scrollbar';
+import PerfectScrollbar from 'react-perfect-scrollbar';
 import { withRouter } from 'react-router-dom';
 
 import { connect } from 'react-redux';
@@ -19,7 +19,10 @@ class Sidebar extends Component {
   render() {
     return (
       <div className="sidebar">
-        <div className="sidebar-wrapper">
+        <PerfectScrollbar
+          className="sidebar-wrapper"
+          options={{ suppressScrollX: true, wheelPropagation: false }}
+        >
           <div className="logo">
             <img src="/assets/img/doctor.png" />
             <h4>
@@ -59,7 +62,7 @@ class Sidebar extends Component {
               </NavLink>
             </NavItem>
           </Nav>
-        </div>
+        </PerfectScrollbar>
       </div>
     );
   }
