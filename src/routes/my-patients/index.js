@@ -47,6 +47,14 @@ class MyPatients extends Component {
     this.props.getAllMyPatient();
   }
 
+  gotoVitals = index => {
+    const state = this.props.myPatients[index];
+    this.props.history.push({
+      pathname: 'patient-info',
+      state
+    });
+  };
+
   render() {
     return this.props.loading ? (
       <div className="loading" />
@@ -80,7 +88,15 @@ class MyPatients extends Component {
         <Row className="patients-list">
           {this.props.myPatients.length > 0 &&
             this.props.myPatients.map((item, index) => (
-              <Colxx xxs={6} xs={4} sm={3} md={2} className={`mb-2`} key={index}>
+              <Colxx
+                xxs={6}
+                xs={4}
+                sm={3}
+                md={2}
+                className={`mb-2`}
+                key={index}
+                onClick={() => this.gotoVitals(index)}
+              >
                 <Card>
                   <CardImg top width="100%" src={item.image} alt="Patients Image" />
                   <CardBody>
